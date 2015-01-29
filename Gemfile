@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -62,4 +62,7 @@ group :development do
   gem 'net-ssh', '~> 2.7.0'
   gem 'capistrano-unicorn', :require => false
 end
+
+#Fix
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
