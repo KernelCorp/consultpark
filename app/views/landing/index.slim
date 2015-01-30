@@ -235,9 +235,15 @@
           = image_tag 'landing/offer_text.png', id: 'offer-text-img'
       .text-block Пакеты аутсорсинга бизнес-процессов:
 
-
-
-
+      = image_tag 'landing/temp_offer.png', id: 'temp-offer-img'
+      a.btn-offer#temp-1 href='#'
+        span Хочу узнать больше!
+      a.btn-offer#temp-2 href='#'
+        span Хочу узнать больше!
+      a.btn-offer#temp-3 href='#'
+        span Хочу узнать больше!
+      a.btn-offer#temp-4 href='#'
+        span Хочу узнать больше!
 
   section#test-drive
     .elka.top
@@ -467,6 +473,8 @@ coffee:
     $(".bxslider").bxSlider(
       pager: false
       adaptiveHeight: true
+      auto: true
+      pause: 20000
     )
     new LandingPopupController()
     return
