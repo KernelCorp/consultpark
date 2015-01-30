@@ -3,7 +3,7 @@ class RequestsController < ApplicationController
   layout false
 
   def create
-    @request = Request.new params[:request]
+    @request = Request.new request_params
     if @request.save
       respond_with @request, status: :created, location: '/'
     else

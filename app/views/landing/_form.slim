@@ -1,10 +1,10 @@
-= form_for Request.new do |f|
+= form_for Request.new, remote: true do |f|
   = f.text_field :phone, placeholder: 'Ваш телефон', pattern: '^(\D*\d\D*){11,}$', required: true
   br
   = f.text_field :name, placeholder: 'Ваше имя', required: true
   br
   = f.email_field :email, placeholder: 'Ваш e-mail'
   br
-  = f.hidden_field :from, defult: @from
+  = f.hidden_field :from, value: from
 
-  = f.submit @submit_text
+  = f.submit submit_text
