@@ -6,6 +6,7 @@ gem 'rails', '~>4.2.0'
 
 # Mongoid and utils
 gem 'mongoid', '~> 4.0.0'
+gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 
 # Admin tool
 gem 'rails_admin'
@@ -33,9 +34,9 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'unicorn', group: :production
+
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'

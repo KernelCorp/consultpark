@@ -1,5 +1,24 @@
 #landing
 
+  section#top-nav
+    #top-nav-container.container.w-1025
+      a.anchor.inlb href='#header' О компании
+      .dot-divider.inlb
+      a.anchor.inlb href='#outsource' Аутсорсинг
+      .dot-divider.inlb
+      a.anchor.inlb href='#offer' Что мы предлагаем
+      .dot-divider.inlb
+      a.anchor.inlb href='#test-drive' Тест-драйв услуг
+      .dot-divider.inlb
+      a.anchor.inlb href='#feedback' Отзывы
+      .dot-divider.inlb
+      a.anchor.inlb href='#clients' Наши клиенты
+      .dot-divider.inlb
+      a.anchor.inlb href='#news' Новости
+      .dot-divider.inlb
+      a.anchor.inlb href='#map' Контакты
+
+
   section#header
     #header-container.container.w-1025
       = image_tag 'landing/logo.png', id: 'logo-img'
@@ -161,6 +180,8 @@
               управления персоналом
 
   section#five-steps
+    .elka.top
+    .elka.bot
     #five-steps-container.container.w-1025
       .title-block
         .title-img.inlb
@@ -219,6 +240,7 @@
 
 
   section#test-drive
+    .elka.top
     #test-drive-container.container.w-1025
       .title-block
         .title-img.inlb.baloon
@@ -258,4 +280,156 @@
           a.btn-2 href='#'
             span Пройти аудит
 
+  section#feedback
+    .elka.top
+    .elka.bot
+    #feedback-container.container.w-1025
+      .title-block
+        .title-img.inlb.baloon
+          span.arrow
+          = image_tag 'landing/i_baloon.png', id: 'i-baloon-img'
+        .title-text.inlb
+          = image_tag 'landing/feedback_text.png', id: 'feedback-text-img'
+      .slider-block
+        ul.bxslider
+          li.item#feedback-1
+            .photo.inlb
+              = image_tag 'landing/feedback_1.png'
+            .content.inlb
+              .name Ирина КАРПУНИНА
+              .desc Владелица крупной сети мебельных магазинов
+              .text
+                | «ConsultPark» помогли нам грамотно выстроить систему продаж через обучение сотрудников.
+                  Да, это процесс не быстрый, зато результат превзошел все мои ожидания.
+                  Прибыль магазинов значительно выросла.
+          li.item#feedback-2
+            .photo.inlb
+              = image_tag 'landing/feedback_2.png'
+            .content.inlb
+              .name Елена ЗАХАРЕНКО
+              .desc Директор сети центров раннего развития «Бэби-клуб», г. Москва
+              .text
+                | Мы заключили с «ConsultPark» договор долгосрочного сотрудничества. Компания оказывает нам комплексные
+                  услуги в сфере маркетинга, продаж, обучения персонала. Благодаря экспертам «ConsultPark» наш бизнес
+                  стремительно развивается. Сейчас мы работаем не только в Новосибирске, но и в Москве. Вести дела
+                  одновременно в двух городах очень тяжело, поэтому компания стала для меня правой рукой, ее сотрудникам
+                  я могу доверить курировать бизнес в Новосибирске, так как большее количество времени сейчас провожу
+                  в Москве. Более того, технологии, которые я использую, я передаю людям, которые работают в сфере
+                  оказания услуг для детей. Они оказались очень эффективными.
+          li.item#feedback-3
+            .photo.inlb
+              = image_tag 'landing/feedback_3.png'
+            .content.inlb
+              .name Евгений ЗЕЙНАЛОВ
+              .desc Руководитель музея занимательных наук «Фабрика гениев»
+              .text
+                | Мы относимся к категории стартапов. Решили обратиться к профессионалам, к компании «ConsultPark»,
+                  чтобы они могли вести процессы, в которых мы не являемся специалистами. Сами же будем заниматься тем,
+                  что нам нравится и в чем мы хорошо разбираемся:  будем разрабатывать новые интересные экспонаты для
+                  нашего музея. В планах у нас – продажа франшизы, и мы уже знаем, к кому обратимся за помощью в этом вопросе.
+          li.item#feedback-4
+            .photo.inlb
+              = image_tag 'landing/feedback_4.png'
+            .content.inlb
+              .name Кристина КУЧИНСКАЯ
+              .desc Руководитель программы "Ты – предприниматель" в Новосибирской области
+              .text
+                | Я давно знакома с руководителями компании «ConsultPark». Мы часто приглашаем экспертов этой компании
+                  провести мастер-классы, тренинги. Они всегда готовы поделиться опытом, дают дельные советы.
+                  Если молодые предприниматели обращаются ко мне за помощью, то я советую им обратиться в «ConsultPark»,
+                  так как знаю, что там действительно работают профессионалы.
+          li.item#feedback-5
+            .photo.inlb
+              = image_tag 'landing/feedback_5.png'
+            .content.inlb
+              .name Елена МЕРЕЩЕНКО
+              .desc Директор по маркетингу «ЕвроМед клиника»
+              .text
+                | У нас очень большой объем работы, поэтому все, что касается продвижения в интернете, мы отдали на
+                  аутсорсинг компании «ConsultPark».  Мы экономим время и спокойны за результат, поэтому в дальнейшем
+                  готовы опять сотрудничать с ними.
+          li.item#feedback-6
+            .photo.inlb
+              = image_tag 'landing/feedback_6.png'
+            .content.inlb
+              .name Алексей ЧУПИН
+              .desc Стартап в сфере IT
+              .text
+                | Команда нашего стартапа – это в основном программисты, узкие специалисты в своей области. Продвижение
+                  наших услуг мы доверили специалистам компании «ConsultPark». Еще один немаловажный факт – «ConsultPark»
+                  находится в Технопарке, где расположен и наш офис. Это очень удобно.
 
+  section#clients
+    #clients-container.container.w-1280
+      .title-block
+        .title-img.inlb.baloon
+          span.arrow
+          = image_tag 'landing/i_client.png', id: 'i-client-img'
+        .title-text.inlb
+          = image_tag 'landing/clients_text.png', id: 'clients-text-img'
+      .clients-list
+        = image_tag 'landing/logos.jpg'
+
+  section#news
+    .elka.top
+    .elka.bot
+    #news-container.container
+      .title-block
+        .title-img.inlb.baloon
+          span.arrow
+          = image_tag 'landing/i_news.png', id: 'i-news-img'
+        .title-text.inlb
+          = image_tag 'landing/news_text.png', id: 'news-text-img'
+      .news-list
+        - @news.each_with_index do |news, i|
+          .news-block
+            - if (i != 1)
+              .news-pic.inlb.left-pic
+                = image_tag news.pic
+            .news-content.inlb
+              .date
+                = news.created_at.strftime('%d.%m.%y')
+              a.title href='#'
+                = news.title
+              .preview
+                = news.preview
+            - if (i == 1)
+              .news-pic.inlb.right-pic
+                = image_tag news.pic
+          - if (i < 2)
+            .zigzag
+        a.btn-news href='#'
+          span Все новости
+
+  section#map
+    #baloons-container.container.w-1280
+      .contacts.baloon
+        span.arrow
+        .title ООО «Консалт Парк»
+        .address
+          | Николаева, 12<br>
+            630102, г. Новосибирск
+        a.email href='mailto:info@consultpark.ru'
+          | info@consultpark.ru\
+        .phone 8(383) 373-43-80
+      .formb.baloon
+        span.arrow
+        .title Заказать<br>обратный звонок
+        = render partial: 'landing/form', from: 'callback'
+    #map-container.container
+      = render partial: 'landing/gis.html'
+
+
+
+
+
+
+
+
+coffee:
+  $ ->
+    $(".bxslider").bxSlider(
+      pager: false
+      adaptiveHeight: true
+    )
+    return
