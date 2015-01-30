@@ -1,0 +1,7 @@
+= form_for Request.new do |f|
+  = f.text_field :phone, placeholder: 'Ваш телефон', pattern: '^(\D*\d\D*){11,}$', required: true
+  = f.text_field :name, placeholder: 'Ваше имя', required: true
+  = f.email_field :email, placeholder: 'Ваш e-mail'
+  = f.hidden_field :from, defult: @from
+
+  = f.submit 'Заказать'

@@ -1,7 +1,6 @@
 #landing
   min-width: 1280px
   color: #414141
-  min-height: 10000px
 
   //-------------- Common styles --------------
   section
@@ -51,6 +50,53 @@
       -moz-transform: rotate(90deg) skew(20deg)
       -o-transform: rotate(90deg) skew(20deg)
       transform: rotate(90deg) skew(20deg)
+  .elka
+    position: absolute
+    width: 100%
+    height: 9px
+    left: 0
+    &.top
+      top: -9px
+      background: image_url('landing/top_divider.png')
+    &.bot
+      bottom: -9px
+      background: image_url('landing/bot_divider.png')
+  form
+    text-align: center
+    ::-webkit-input-placeholder
+      color: #ffffff
+    ::-moz-placeholder
+      color: #ffffff
+      opacity: 1
+    :-ms-input-placeholder
+      color: #ffffff
+    input
+      height: 35px
+      width: 218px
+      border-radius: 19px
+      background: #71b931
+      text-align: center
+      color: #ffffff
+      font-family: FuturaOrtoRegular
+      font-size: 17px
+      border: none
+      outline: none
+      margin-bottom: 6px
+      &[type=submit]
+        width: 190px
+        height: 81px
+        cursor: pointer
+        background: image_url('landing/btn_form.png')
+        color: #414141
+        font-family: FuturaOrtoBold
+        font-size: 17px
+        text-transform: uppercase
+        margin-top: 10px
+        text-align: left
+        padding-left: 32px
+
+
+
   //-------------------------------------------
 
   #header
@@ -297,6 +343,7 @@
           text-transform: uppercase
           text-align: center
           width: 190px
+  //----------------------------------------------------------------------
 
   #offer
     background-image: image_url('landing/offer_bg.jpg')
@@ -323,6 +370,7 @@
         text-align: center
         margin-top: 22px
 
+  //----------------------------------------------------------------------
 
   #test-drive
     background: image_url('landing/baloon_bg_4.png')
@@ -408,6 +456,211 @@
           a.btn-2
             span
               padding-top: 18px
+
+  //----------------------------------------------------------------------
+
+  #feedback
+    background: image_url('landing/baloon_bg_5.png')
+    margin-top: -9px
+    height: 509px
+    z-index: 5
+    #feedback-container
+      .title-block
+        padding-top: 72px
+        .title-img.baloon
+          height: 101px
+          width: 101px
+          margin: 0 10px 0 0
+          img
+            margin-top: 22px
+        .title-text
+          margin-top: 10px
+      .slider-block
+        width: 840px
+        margin: 28px auto 0
+        .bx-wrapper
+          margin: 0
+          .bx-viewport
+            margin: 0
+            border: none
+            outline: none
+            box-shadow: none
+            background: transparent
+        ul
+          min-height: 220px
+          width: 840px
+          background: transparent
+          li
+            font-size: 0
+            padding-bottom: 15px
+            .photo
+              height: 210px
+              width: 210px
+            .content
+              margin-left: 22px
+              width: 605px
+              line-height: 1.1
+              .name
+                margin-top: 20px
+                font-family: FuturaOrtoBold
+                font-size: 40px
+                text-transform: uppercase
+              .desc
+                font-family: FuturaOrtoBold
+                font-size: 17px
+                text-transform: uppercase
+                margin-bottom: 12px
+              .text
+                font-family: FuturaOrtoRegular
+                font-size: 17px
+                line-height: 1.2
+
+  //----------------------------------------------------------------------
+
+  #clients
+    background: image_url('landing/baloon_bg_2.jpg')
+    #clients-container
+      .title-block
+        padding-top: 72px
+        .title-img.baloon
+          height: 101px
+          width: 101px
+          background: #87e038
+          margin-left: 25px
+          img
+            margin-top: 22px
+        .title-text
+          margin: 5px 0 0 13px
+      .clients-list
+        padding: 54px 0 65px 0
+
+  //----------------------------------------------------------------------
+
+  #news
+    background: image_url('landing/baloon_bg_green.jpg')
+    min-height: 300px
+    z-index: 5
+    #news-container
+      width: 710px
+      .title-block
+        padding-top: 72px
+        .title-img.baloon
+          height: 101px
+          width: 101px
+          margin: 0 10px 0 0
+          img
+            margin-top: 28px
+        .title-text
+          margin: 5px 16px 0 0
+      .news-list
+        font-size: 0
+        margin-top: 36px
+        .news-block
+          width: 100%
+          .news-pic
+            height: 105px
+            width: 105px
+            &.left-pic
+              margin-right: 15px
+            &.right-pic
+              margin-left: 15px
+          .news-content
+            width: 585px
+            font-size: 17px
+            .date
+              font-family: FuturaOrtoRegular
+            .title
+              font-family: FuturaOrtoBold
+              text-transform: uppercase
+              color: #414141
+            .preview
+              font-family: FuturaOrtoRegular
+              margin-top: 4px
+        .zigzag
+          height: 11px
+          width: 291px
+          margin: 20px auto
+          background: image_url('landing/zigzag_white.png')
+      .btn-news
+        display: block
+        width: 263px
+        height: 79px
+        background: image_url('landing/btn_news.png') no-repeat
+        margin: 20px auto 0
+        padding-bottom: 25px
+        text-decoration: none
+        font-family: FuturaOrtoBold
+        font-size: 17px
+        text-transform: uppercase
+        span
+          color: #414141
+          display: block
+          padding: 29px 0 0 45px
+
+  //----------------------------------------------------------------------
+
+  #map
+    height: 640px
+    overflow: hidden
+    #baloons-container
+      position: absolute
+      left: 0
+      right: 0
+      height: 100%
+      .contacts
+        z-index: 10
+        position: absolute
+        width: 287px
+        height: 287px
+        background: #71b931
+        right: 240px
+        top: 60px
+        font-size: 17px
+        text-align: center
+        .title
+          color: #ffffff
+          font-family: FuturaOrtoBold
+          text-transform: uppercase
+          margin: 70px 0 4px 0
+        .address
+          margin-bottom: 10px
+        .address, .email
+          color: #414141
+          font-family: FuturaOrtoRegular
+        .phone
+          color: #ffffff
+          font-family: FuturaOrtoBold
+          font-size: 22px
+          margin-top: 20px
+
+      .formb
+        z-index: 10
+        position: absolute
+        left: 90px
+        bottom: 40px
+        height: 343px
+        width: 343px
+        background: #87e038
+        span.arrow
+          left: 93%
+          top: 44%
+          -webkit-transform: rotate(145deg) skew(23deg)
+          -moz-transform: rotate(145deg) skew(23deg)
+          -o-transform: rotate(145deg) skew(23deg)
+          transform: rotate(145deg) skew(23deg)
+        .title
+          font-family: FuturaOrtoBold
+          font-size: 17px
+          color: #ffffff
+          text-align: center
+          text-transform: uppercase
+          margin: 38px 0 15px 0
+
+
+
+
+
+
 
 
 
