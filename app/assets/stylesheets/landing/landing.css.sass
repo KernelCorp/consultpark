@@ -99,6 +99,33 @@
 
   //-------------------------------------------
 
+  #top-nav
+    position: fixed
+    z-index: 100
+    top: 0
+    left: 0
+    height: 50px
+    background: #87e038
+    #top-nav-container
+      text-align: center
+      .anchor
+        text-decoration: none
+        color: #ffffff
+        font-family: FuturaOrtoRegular
+        font-size: 17px
+        margin-top: 16px
+        line-height: 1
+        &:hover
+          text-decoration: underline
+      .dot-divider
+        background: rgba(65,65,65,0.25)
+        height: 5px
+        width: 5px
+        border-radius: 100%
+        margin: 22px 5px 0
+
+  //-------------------------------------------
+
   #header
     height: 823px
     background: image_url('landing/header_bg.jpg') center
@@ -293,13 +320,11 @@
   //----------------------------------------------------------------------
 
   #five-steps
-    height: 483px
-    background-image: image_url('landing/baloon_bg_3.png')
-    margin-top: -9px
+    background-image: image_url('landing/baloon_bg_green.jpg')
     z-index: 5
     #five-steps-container
       .title-block
-        padding-top: 26px
+        padding-top: 17px
         .title-img
           height: 101px
           width: 101px
@@ -335,6 +360,7 @@
             margin-top: 10px
       .steps-text
         margin: 21px 0 0 11px
+        padding-bottom: 43px
         .item
           color: #447132
           font-family: FuturaOrtoBold
@@ -347,7 +373,7 @@
 
   #offer
     background-image: image_url('landing/offer_bg.jpg')
-    min-height: 3348px
+    min-height: 3359px
     #offer-bg-pic
       position: absolute
       width: 100%
@@ -356,7 +382,7 @@
       top: -18px
     #offer-container
       .title-block
-        padding-top: 56px
+        padding-top: 66px
         .title-img.baloon
           height: 101px
           width: 101px
@@ -373,13 +399,13 @@
   //----------------------------------------------------------------------
 
   #test-drive
-    background: image_url('landing/baloon_bg_4.png')
-    margin-top: -9px
-    height: 548px
-    z-index: 5
+    background: image_url('landing/baloon_bg_2.jpg')
+    z-index: 3
+    .elka.top
+      background: image_url('landing/top_divider_white.png')
     #test-drive-container
       .title-block
-        padding-top: 45px
+        padding-top: 37px
         .title-img.baloon
           height: 101px
           width: 101px
@@ -389,6 +415,7 @@
             margin-top: 22px
       .free-list
         margin: 25px 0 0 100px
+        padding-bottom: 62px
         .item
           text-align: center
           margin-left: 30px
@@ -408,7 +435,8 @@
               text-transform: uppercase
               color: #414141
               text-align: right
-              padding: 7px 55px 0 0
+              padding: 10px 55px 0 0
+              line-height: 1.2
           .baloon
             height: 221px
             width: 221px
@@ -455,18 +483,16 @@
               color: #ffffff
           a.btn-2
             span
-              padding-top: 18px
+              padding-top: 21px
 
   //----------------------------------------------------------------------
 
   #feedback
-    background: image_url('landing/baloon_bg_5.png')
-    margin-top: -9px
-    height: 509px
+    background: image_url('landing/baloon_bg_green.jpg')
     z-index: 5
     #feedback-container
       .title-block
-        padding-top: 72px
+        padding-top: 62px
         .title-img.baloon
           height: 101px
           width: 101px
@@ -478,6 +504,7 @@
       .slider-block
         width: 840px
         margin: 28px auto 0
+        padding-bottom: 72px
         .bx-wrapper
           margin: 0
           .bx-viewport
@@ -521,7 +548,7 @@
     background: image_url('landing/baloon_bg_2.jpg')
     #clients-container
       .title-block
-        padding-top: 72px
+        padding-top: 82px
         .title-img.baloon
           height: 101px
           width: 101px
