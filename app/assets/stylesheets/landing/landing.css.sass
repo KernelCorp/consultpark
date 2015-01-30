@@ -1,8 +1,33 @@
-#landing
-  min-width: 1280px
-  color: #414141
+#top-nav
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  height: 50px
+  background: #87e038
+  #top-nav-container
+    text-align: center
+    .anchor
+      text-decoration: none
+      color: #ffffff
+      font-family: FuturaOrtoRegular
+      font-size: 17px
+      margin-top: 16px
+      line-height: 1
+      &:hover
+        text-decoration: underline
+    .dot-divider
+      background: rgba(65,65,65,0.25)
+      height: 5px
+      width: 5px
+      border-radius: 100%
+      margin: 22px 5px 0
 
-  //-------------- Common styles --------------
+//-------------------------------------------
+
+
+//-------------- Common styles --------------
+#landing, .landing-styles
   section
     width: 100%
     position: relative
@@ -97,32 +122,9 @@
 
   //-------------------------------------------
 
-  #top-nav
-    position: fixed
-    z-index: 100
-    top: 0
-    left: 0
-    height: 50px
-    background: #87e038
-    #top-nav-container
-      text-align: center
-      .anchor
-        text-decoration: none
-        color: #ffffff
-        font-family: FuturaOrtoRegular
-        font-size: 17px
-        margin-top: 16px
-        line-height: 1
-        &:hover
-          text-decoration: underline
-      .dot-divider
-        background: rgba(65,65,65,0.25)
-        height: 5px
-        width: 5px
-        border-radius: 100%
-        margin: 22px 5px 0
-
-  //-------------------------------------------
+#landing
+  min-width: 1280px
+  color: #414141
 
   #header
     height: 823px
@@ -589,6 +591,7 @@
         .title-text
           margin: 5px 0 0 13px
       .clients-list
+        text-align: center
         padding: 54px 0 65px 0
 
   //----------------------------------------------------------------------
@@ -656,6 +659,7 @@
 
   //----------------------------------------------------------------------
 
+#landing, .landing-styles
   #map
     height: 640px
     overflow: hidden
@@ -770,7 +774,7 @@
       margin-top: 10px
     .text
       margin: 23px 0 25px 0
-  #consult-popup
+  #consult-popup, #pricelist-popup
     .icon-img
       margin-top: 30px
     .text-img
