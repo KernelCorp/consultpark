@@ -40,7 +40,7 @@
         - @news.each do |news|
           .news-block
             .news-pic.inlb.left-pic
-              = image_tag news.pic
+              = image_tag news.pic.url(:medium)
             .news-content.inlb
               .date
                 = news.created_at.strftime('%d.%m.%y')
@@ -60,7 +60,7 @@
           | Николаева, 12<br>
               630102, г. Новосибирск
         a.email href='mailto:info@consultpark.ru'
-          | info@consultpark.ru\
+          | info@consultpark.ru
         .phone 8(383) 373-43-80
       .formb.baloon
         span.arrow
