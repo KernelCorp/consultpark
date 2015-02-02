@@ -31,4 +31,9 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model News do
+    include_all_fields
+    field :created_at
+  end
 end
