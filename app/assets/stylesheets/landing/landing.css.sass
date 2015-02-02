@@ -95,8 +95,6 @@
         text-align: left
         padding-left: 32px
 
-
-
   //-------------------------------------------
 
   #top-nav
@@ -374,6 +372,36 @@
   #offer
     background-image: image_url('landing/offer_bg.jpg')
     min-height: 3359px
+
+    #temp-offer-img
+      margin: 25px 0 0 20px
+    a.btn-offer
+      position: absolute
+      display: block
+      width: 307px
+      height: 62px
+      background: image_url('landing/btn_offer.png')
+      text-decoration: none
+      color: #414141
+      span
+        font-family: FuturaOrtoBold
+        font-size: 17px
+        line-height: 60px
+        text-transform: uppercase
+        padding-left: 30px
+    #temp-1
+      top: 881px
+      left: 82px
+    #temp-2
+      top: 1504px
+      left: 82px
+    #temp-3
+      top: 2273px
+      left: 82px
+    #temp-4
+      top: 3218px
+      left: 82px
+
     #offer-bg-pic
       position: absolute
       width: 100%
@@ -684,6 +712,112 @@
           text-align: center
           text-transform: uppercase
           margin: 38px 0 15px 0
+
+  //----------------------------------------------------------------------
+
+  #popup-shadow
+    display: none
+    position: fixed
+    z-index: 200
+    height: 100%
+    width: 100%
+    left: 0
+    top: 0
+    background: rgba(0, 0, 0, 0.3)
+  .popup
+    display: none
+    z-index: 300
+    position: fixed
+    top: 15%
+    left: 0
+    right: 0
+  .popup-baloon
+    margin: auto
+    height: 620px
+    width: 620px
+    background: #87e038
+    text-align: center
+    >.arrow
+      z-index: -1
+      left: 11%
+      top: 7%
+      -webkit-transform: rotate(80deg) skew(-20deg)
+      -moz-transform: rotate(80deg) skew(-20deg)
+      -o-transform: rotate(80deg) skew(-20deg)
+      transform: rotate(80deg) skew(-20deg)
+    .text
+      font-family: FuturaOrtoRegular
+      font-size: 13px
+      color: #414141
+    form
+      input
+        height: 60px
+        width: 364px
+        border-radius: 30px
+        margin-bottom: 13px
+        font-family: FuturaOrtoBold
+        font-size: 17px
+        text-transform: uppercase
+        &[type=submit]
+          height: 62px
+          width: 256px
+          background: image_url('landing/btn_popup.png')
+
+  #secret-popup
+    .icon-img
+      margin-top: 35px
+    .text-img
+      margin-top: 10px
+    .text
+      margin: 23px 0 25px 0
+  #consult-popup
+    .icon-img
+      margin-top: 30px
+    .text-img
+      margin-top: -10px
+    .text
+      margin: 30px 0 25px 0
+  #audit-popup
+    .icon-img
+      margin-top: 24px
+    .text-img
+      margin-top: 3px
+    .text
+      margin: 23px 0 25px 0
+
+  #success-popup
+    top: 18%
+    .baloon
+      background: #87e038
+      text-align: center
+      margin: auto
+      height: 412px
+      width: 412px
+      >.arrow
+        z-index: -1
+    .text-img
+      margin-top: 40px
+    .text
+      font-family: FuturaOrtoRegular
+      font-size: 13px
+      color: #414141
+      margin: 20px 0 25px 0
+    a.btn-close
+      display: block
+      margin: auto
+      width: 163px
+      height: 62px
+      background: image_url('landing/btn_close.png')
+      text-decoration: none
+      span
+        display: block
+        line-height: 60px
+        color: #414141
+        text-transform: uppercase
+        font-family: FuturaOrtoBold
+        font-size: 17px
+
+
 
 
 

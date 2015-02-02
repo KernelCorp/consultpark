@@ -235,9 +235,15 @@
           = image_tag 'landing/offer_text.png', id: 'offer-text-img'
       .text-block Пакеты аутсорсинга бизнес-процессов:
 
-
-
-
+      = image_tag 'landing/temp_offer.png', id: 'temp-offer-img'
+      a.btn-offer#temp-1 href='#'
+        span Хочу узнать больше!
+      a.btn-offer#temp-2 href='#'
+        span Хочу узнать больше!
+      a.btn-offer#temp-3 href='#'
+        span Хочу узнать больше!
+      a.btn-offer#temp-4 href='#'
+        span Хочу узнать больше!
 
   section#test-drive
     .elka.top
@@ -257,7 +263,7 @@
             = image_tag 'landing/drive_1_text.png', id: 'drive-1-text-img'
             .text
               | Проверим насколько<br>эффективно<br>ваши менеджеры<br>используют техники<br>продаж
-          a.btn-2 href='#'
+          a.btn-2.popup-link href='#' id='secret'
             span Подать заявку<br>на проверку
         #free-consult.item.inlb
           .baloon
@@ -267,7 +273,7 @@
             = image_tag 'landing/drive_2_text.png', id: 'drive-2-text-img'
             .text
               | Дадим ряд рекомендаций<br>для увеличения прибыли<br>вашей компании
-          a.btn-2 href='#'
+          a.btn-2.popup-link href='#' id='consult'
             span Записаться на<br>консультацию
         #free-audit.item.inlb
           .baloon
@@ -277,7 +283,7 @@
             = image_tag 'landing/drive_3_text.png', id: 'drive-3-text-img'
             .text
               | Выявим зоны роста<br>для вашего бизнеса<br>на ближайший<br>период
-          a.btn-2 href='#'
+          a.btn-2.popup-link href='#' id='audit'
             span Пройти аудит
 
   section#feedback
@@ -415,15 +421,51 @@
       .formb.baloon
         span.arrow
         .title Заказать<br>обратный звонок
-        = render partial: 'landing/form', from: 'callback'
+        = render partial: 'landing/form', locals: {from: 'callback', submit_text: 'Заказать'}
     #map-container.container
       = render partial: 'landing/gis.html'
 
-
-
-
-
-
+  /Popup master
+  #popup-shadow
+  #secret-popup.popup
+    .popup-baloon.baloon
+      span.arrow
+      = image_tag 'landing/i_secret.png', class: 'icon-img'
+      br
+      = image_tag 'landing/secret_text.png', class: 'text-img'
+      br
+      .text
+        | Проверим насколько эффективно ваши менеджеры<br>используют техники продаж
+      = render partial: 'landing/form', locals: {from: 'secret', submit_text: 'Отправить заявку'}
+  #consult-popup.popup
+    .popup-baloon.baloon
+      span.arrow
+      = image_tag 'landing/i_baloon_white.png', class: 'icon-img'
+      br
+      = image_tag 'landing/consult_text.png', class: 'text-img'
+      br
+      .text
+        | Дадим ряд рекомендаций для увеличения прибыли<br>вашей компании
+      = render partial: 'landing/form', locals: {from: 'consult', submit_text: 'Отправить заявку'}
+  #audit-popup.popup
+    .popup-baloon.baloon
+      span.arrow
+      = image_tag 'landing/i_audit.png', class: 'icon-img'
+      br
+      = image_tag 'landing/audit_text.png', class: 'text-img'
+      br
+      .text
+        | Выявим зоны роста для вашего бизнеса<br>на ближайший период
+      = render partial: 'landing/form', locals: {from: 'audit', submit_text: 'Отправить заявку'}
+  #success-popup.popup
+    .baloon
+      span.arrow
+      = image_tag 'landing/success_text.png', class: 'text-img'
+      br
+      .text
+        | Ваша заявка получена,<br>наш менеджер свяжется с вами<br>в ближайшее время.<br>Спасибо.
+      a.btn-close href='#'
+        span.btn-close Закрыть
 
 
 coffee:
@@ -431,5 +473,8 @@ coffee:
     $(".bxslider").bxSlider(
       pager: false
       adaptiveHeight: true
+      auto: true
+      pause: 20000
     )
+    new LandingPopupController()
     return
