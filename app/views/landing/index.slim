@@ -423,7 +423,7 @@
         .title Заказать<br>обратный звонок
         = render partial: 'landing/form', locals: {from: 'callback', submit_text: 'Заказать'}
     #map-container.container
-      = render partial: 'landing/gis.html'
+      = render partial: 'landing/gis.html.slim'
 
   section#social
     .container.w-1025
