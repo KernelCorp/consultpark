@@ -38,7 +38,7 @@
     #news-container.container.w-1025
       .news-show-block
         .news-img.inlb
-          = image_tag @news.pic
+          = image_tag @news.pic.url(:medium)
         .news-title.inlb
           = @news.title
         .news-body
@@ -58,7 +58,7 @@
           | Николаева, 12<br>
                 630102, г. Новосибирск
         a.email href='mailto:info@consultpark.ru'
-          | info@consultpark.ru\
+          | info@consultpark.ru
         .phone 8(383) 373-43-80
       .formb.baloon
         span.arrow
