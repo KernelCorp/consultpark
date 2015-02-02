@@ -42,7 +42,7 @@
         .news-title.inlb
           = @news.title
         .news-body
-          = @news.text
+          = raw @news.text
         .social
       a.btn-news href='/news'
         span Все новости

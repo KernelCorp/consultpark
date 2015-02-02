@@ -395,7 +395,7 @@
             .news-content.inlb
               .date
                 = news.created_at.strftime('%d.%m.%y')
-              a.title href='#'
+              a.title href=news_path(news)
                 = news.title
               .preview
                 = news.preview
