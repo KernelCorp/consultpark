@@ -34,6 +34,7 @@ RailsAdmin.config do |config|
 
   config.model News do
     include_all_fields
+    field :text, :ck_editor
     field :created_at
   end
 end
