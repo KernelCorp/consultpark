@@ -425,6 +425,27 @@
     #map-container.container
       = render partial: 'landing/gis.html'
 
+  section#social
+    .container.w-1025
+      .vk
+        script type="text/javascript" src="//vk.com/js/api/openapi.js?116"
+        #vk_groups
+        javascript:
+          VK.Widgets.Group("vk_groups", {mode: 0, width: "300", height: "400", color1: '87e038', color2: '447132', color3: '71b931'}, 66175123);
+      .facebook
+        javascript:
+          (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        .fb-like-box data-href="https://www.facebook.com/consultpark" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false" data-height="400"
+
+
+
   /Popup master
   #popup-shadow
   #pricelist-popup.popup
