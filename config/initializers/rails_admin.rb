@@ -8,6 +8,11 @@ RailsAdmin.config do |config|
   # end
   # config.current_user_method(&:current_user)
 
+  config.authenticate_with do
+    warden.authenticate! scope: :admin
+  end
+  config.current_user_method(&:current_admin)
+
   ## == Cancan ==
   # config.authorize_with :cancan
 
@@ -34,6 +39,7 @@ RailsAdmin.config do |config|
 
   config.model News do
     include_all_fields
+    field :text, :ck_editor
     field :created_at
   end
 end
