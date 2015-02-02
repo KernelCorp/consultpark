@@ -15,6 +15,9 @@ gem 'ckeditor'
 # Authentication & Authorization
 gem 'devise'
 
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate_mongoid'
+
 gem 'slim-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

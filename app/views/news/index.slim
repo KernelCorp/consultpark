@@ -1,0 +1,97 @@
+#news-show.news.landing-styles
+
+  section#top-nav
+    #top-nav-container.container.w-1025
+      a.anchor.inlb href='/#header' О компании
+      .dot-divider.inlb
+      a.anchor.inlb href='/#info' Аутсорсинг
+      .dot-divider.inlb
+      a.anchor.inlb href='/#offer' Что мы предлагаем
+      .dot-divider.inlb
+      a.anchor.inlb href='/#test-drive' Тест-драйв услуг
+      .dot-divider.inlb
+      a.anchor.inlb href='/#feedback' Отзывы
+      .dot-divider.inlb
+      a.anchor.inlb href='/#clients' Наши клиенты
+      .dot-divider.inlb
+      a.anchor.inlb href='/#news' Новости
+      .dot-divider.inlb
+      a.anchor.inlb href='/#map' Контакты
+
+  section#content
+    .elka.bot
+
+    #header-container.container.w-1025
+      .logo.inlb
+        = image_tag 'landing/logo_news.png'
+      .title-block.inlb
+        .title-img.inlb.baloon
+          span.arrow
+          = image_tag 'landing/i_news_white.png', id: 'news-white-img'
+        .title-text.inlb
+          = image_tag 'landing/news_text.png', id: 'news-text-img'
+      a.btn-sign.inlb.popup-link href='#' id='news'
+        span Подписка
+      .zigzag
+        = image_tag 'landing/zigzag.png'
+
+    #news-container.container.w-1025
+      .news-list
+        - @news.each do |news|
+          .news-block
+            .news-pic.inlb.left-pic
+              = image_tag news.pic
+            .news-content.inlb
+              .date
+                = news.created_at.strftime('%d.%m.%y')
+              a.title href=news_path(news)
+                = news.title
+              .preview
+                = news.preview
+              a.news-link href=news_path(news) Читать полностью
+      = will_paginate @news
+
+  section#map
+    #baloons-container.container.w-1280
+      .contacts.baloon
+        span.arrow
+        .title ООО «Консалт Парк»
+        .address
+          | Николаева, 12<br>
+              630102, г. Новосибирск
+        a.email href='mailto:info@consultpark.ru'
+          | info@consultpark.ru\
+        .phone 8(383) 373-43-80
+      .formb.baloon
+        span.arrow
+        .title Заказать<br>обратный звонок
+        = render partial: 'landing/form', locals: {from: 'callback', submit_text: 'Заказать'}
+    #map-container.container
+      = render partial: 'landing/gis.html'
+
+  /Popup master
+  #popup-shadow
+  #news-popup.popup
+    .popup-baloon.baloon
+      span.arrow
+      = image_tag 'landing/news_popup.png', class: 'icon-img'
+      br
+      .text
+        | Подпишись и получай актуальные новости<br>и советы по развитию бизнеса
+      = render partial: 'landing/form', locals: {from: 'news', submit_text: 'Подписаться'}
+  #success-popup.popup
+    .baloon
+      span.arrow
+      = image_tag 'landing/success_text.png', class: 'text-img'
+      br
+      .text
+        | Ваша заявка получена,<br>наш менеджер свяжется с вами<br>в ближайшее время.<br>Спасибо.
+      a.btn-close href='#'
+        span.btn-close Закрыть
+
+
+coffee:
+  $ ->
+    new NewsPopupController()
+    return
+

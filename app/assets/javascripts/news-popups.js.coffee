@@ -1,4 +1,4 @@
-class @LandingPopupController
+class @NewsPopupController
   constructor: ->
     $('#popup-shadow').click @hide_popup
     $('.popup').click @hide_popup
@@ -11,8 +11,6 @@ class @LandingPopupController
     e.preventDefault()
     $('#popup-shadow').fadeIn('slow')
     name = $(this).attr('id')
-    if $(this).hasClass('pricelist')
-      name = 'pricelist'
     $('#' + name + '-popup').fadeIn('slow')
 
   hide_popup: (e) ->

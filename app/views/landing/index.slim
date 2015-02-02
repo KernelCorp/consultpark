@@ -4,7 +4,7 @@
     #top-nav-container.container.w-1025
       a.anchor.inlb href='#header' О компании
       .dot-divider.inlb
-      a.anchor.inlb href='#outsource' Аутсорсинг
+      a.anchor.inlb href='#info' Аутсорсинг
       .dot-divider.inlb
       a.anchor.inlb href='#offer' Что мы предлагаем
       .dot-divider.inlb
@@ -236,13 +236,13 @@
       .text-block Пакеты аутсорсинга бизнес-процессов:
 
       = image_tag 'landing/temp_offer.png', id: 'temp-offer-img'
-      a.btn-offer#temp-1 href='#'
+      a.btn-offer#temp-1 href='#' class='pricelist popup-link'
         span Хочу узнать больше!
-      a.btn-offer#temp-2 href='#'
+      a.btn-offer#temp-2 href='#' class='pricelist popup-link'
         span Хочу узнать больше!
-      a.btn-offer#temp-3 href='#'
+      a.btn-offer#temp-3 href='#' class='pricelist popup-link'
         span Хочу узнать больше!
-      a.btn-offer#temp-4 href='#'
+      a.btn-offer#temp-4 href='#' class='pricelist popup-link'
         span Хочу узнать больше!
 
   section#test-drive
@@ -374,7 +374,7 @@
         .title-text.inlb
           = image_tag 'landing/clients_text.png', id: 'clients-text-img'
       .clients-list
-        = image_tag 'landing/logos.jpg'
+        = image_tag 'landing/logos.png'
 
   section#news
     .elka.top
@@ -404,7 +404,7 @@
                 = image_tag news.pic
           - if (i < 2)
             .zigzag
-        a.btn-news href='#'
+        a.btn-news href='/news'
           span Все новости
 
   section#map
@@ -427,6 +427,16 @@
 
   /Popup master
   #popup-shadow
+  #pricelist-popup.popup
+    .popup-baloon.baloon
+      span.arrow
+      = image_tag 'landing/i_baloon_white.png', class: 'icon-img'
+      br
+      = image_tag 'landing/consult_text.png', class: 'text-img'
+      br
+      .text
+        | Заполните форму,<br>чтобы узнать подробности
+      = render partial: 'landing/form', locals: {from: 'pricelist', submit_text: 'Отправить заявку'}
   #secret-popup.popup
     .popup-baloon.baloon
       span.arrow
@@ -474,7 +484,7 @@ coffee:
       pager: false
       adaptiveHeight: true
       auto: true
-      pause: 20000
+      pause: 10000
     )
     new LandingPopupController()
     return
