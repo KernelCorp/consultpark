@@ -32,6 +32,8 @@ RailsAdmin.config do |config|
     delete
     show_in_app
 
+    nestable
+
     ## With an audit adapter, you can add:
     # history_index
     # history_show
@@ -41,5 +43,9 @@ RailsAdmin.config do |config|
     include_all_fields
     field :text, :ck_editor
     field :created_at
+  end
+
+  config.model Service do
+    nestable_list true
   end
 end

@@ -10,6 +10,7 @@ gem 'mongoid-paperclip', :require => 'mongoid_paperclip'
 
 # Admin tool
 gem 'rails_admin'
+gem 'rails_admin_nestable', '~> 0.3.1'
 gem 'ckeditor'
 
 # Authentication & Authorization
