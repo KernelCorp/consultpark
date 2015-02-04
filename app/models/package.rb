@@ -18,7 +18,7 @@ class Package
     price
   end
 
-  def name
+  def get_name
     self.category.title + ' | ' + self.title
   end
 
