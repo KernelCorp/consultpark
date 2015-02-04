@@ -504,8 +504,11 @@
           };
           $(document).ready(ready);
           $(document).on("page:load", ready);
-
         .fb-like-box data-href="https://www.facebook.com/consultpark" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false" data-height="400"
+
+      .instagramm
+        .title Consultpark в Instagram
+        iframe src="http://instagramm.ru/instagram-widget-na-sait/iframe/?type=0&imageW=3&imageH=4&bg=&thumbnailSize=80&border=1&padding=5&typetext=consultpark&uid=1689936336" style="height:368px;width:294px;border:0 none;"
 
 
 
@@ -520,7 +523,7 @@
       br
       .text
         | Заполните форму,<br>чтобы узнать подробности
-      = render partial: 'landing/form', locals: {from: 'pricelist', submit_text: 'Отправить заявку'}
+      = render partial: 'landing/form', locals: {from: 'pricelist', submit_text: 'Узнать больше'}
   #secret-popup.popup
     .popup-baloon.baloon
       span.arrow
