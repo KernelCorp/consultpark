@@ -10,6 +10,8 @@ class @LandingPopupController
   show_popup: (e) ->
     e.preventDefault()
     $('#popup-shadow').fadeIn('slow')
+    cat_id = $(e.target).attr('data-catid')
+    $('#pricelist-popup.popup form input[name="request[category_id]"]').val cat_id
     name = $(this).attr('id')
     if $(this).hasClass('pricelist')
       name = 'pricelist'

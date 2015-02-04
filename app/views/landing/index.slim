@@ -267,8 +267,8 @@
                       = image_tag 'landing/no.png'
             tr
               td colspan=2
-                a.btn-offer href='#' class='pricelist popup-link'
-                  span Хочу узнать больше!
+                a.btn-offer href='#' class='pricelist popup-link' data-catid=cat.id
+                  span  data-catid=cat.id Хочу узнать больше!
               - cat.packages.each do |package|
                 td
                   .tbot

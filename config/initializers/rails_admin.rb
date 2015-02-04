@@ -42,4 +42,16 @@ RailsAdmin.config do |config|
     field :text, :ck_editor
     field :created_at
   end
+
+  config.model Request do
+    # include_all_fields
+    # exclude_fields :id, :updated_at
+    field :from
+    field :category
+    field :created_at
+    field :name
+    field :email
+    field :phone
+    field :id
+  end
 end
