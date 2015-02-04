@@ -7,6 +7,6 @@ class Service
 
   belongs_to :category
 
-  default_scope -> {asc :created_at}
+  default_scope -> {desc :position_field}
 
 end
