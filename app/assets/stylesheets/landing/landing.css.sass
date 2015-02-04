@@ -120,6 +120,20 @@
         margin-top: 10px
         text-align: left
         padding-left: 32px
+  .strikethrough
+    position: relative
+  .strikethrough:before
+    position: absolute
+    content: ""
+    left: 0
+    top: 50%
+    right: 0
+    border-top: 1px solid
+    -webkit-transform: rotate(-12deg)
+    -moz-transform: rotate(-12deg)
+    -ms-transform: rotate(-12deg)
+    -o-transform: rotate(-12deg)
+    transform: rotate(-12deg)
 
   //-------------------------------------------
 
@@ -379,31 +393,19 @@
     #temp-offer-img
       margin: 25px 0 0 20px
     a.btn-offer
-      position: absolute
       display: block
       width: 307px
       height: 62px
       background: image_url('landing/btn_offer.png')
       text-decoration: none
       color: #414141
+      margin: 0 auto
       span
         font-family: FuturaOrtoBold
         font-size: 17px
         line-height: 60px
         text-transform: uppercase
         padding-left: 30px
-    #temp-1
-      top: 881px
-      left: 82px
-    #temp-2
-      top: 1504px
-      left: 82px
-    #temp-3
-      top: 2273px
-      left: 82px
-    #temp-4
-      top: 3218px
-      left: 82px
 
     #offer-bg-pic
       position: absolute
@@ -426,6 +428,158 @@
         font-size: 17px
         text-align: center
         margin-top: 22px
+
+      .offer-block
+        .offer-title
+          text-align: center
+          margin: 25px 0
+          .zigzag
+            background: image_url('landing/zigzag.png')
+            width: 150px
+            height: 11px
+            margin-top: 35px
+            &.right-zigzag
+              width: 157px
+          .category-title
+            margin: 0 30px 0 35px
+        table
+          margin: 0 auto 45px
+          border-radius: 8px
+          tr
+            th
+              background: #447132
+              font-family: FuturaOrtoBold
+              font-size: 17px
+              text-transform: uppercase
+              color: #ffffff
+              border-top: 1px solid #c9d7c9
+              &:first-child
+                background: #ffffff
+                width: 305px
+                color: #414141
+                border-radius: 8px 0 0 0
+                border-right: 1px solid #6b9467
+                border-left: 1px solid #c9d7c9
+                .thead
+                  background: #ffffff
+              &:nth-child(2)
+                background: #ffffff
+                width: 110px
+                color: #414141
+                .thead
+                  background: #ffffff
+              &:nth-child(3)
+                background: #ffffff
+                .thead
+                  background: #87e038
+              &:nth-child(4)
+                background: #87e038
+                .thead
+                  background: #71b931
+              &:nth-child(5)
+                background: #71b931
+                .thead
+                  background: #447132
+              &:last-child
+                border-radius: 0 8px 0 0
+                border-right: 1px solid #c9d7c9
+                .thead
+                  border-radius: 8px 8px 0 0
+              .thead
+                padding: 10px 0
+                border-radius: 8px 0 0 0
+                background: #447132
+
+            td
+              text-align: center
+              vertical-align: middle
+              width: 180px
+              background: #447132
+              padding: 8px 0
+              font-family: FuturaOrtoRegular
+              font-size: 17px
+              color: #414141
+              border-top: 1px solid #6b9467
+              &:first-child
+                background: #ffffff
+                width: 305px
+                text-align: left
+                border-right: 1px solid #6b9467
+                border-left: 1px solid #c9d7c9
+              &:nth-child(2)
+                background: #ffffff
+                width: 110px
+                font-family: FuturaOrtoBold
+                color: #447132
+                font-weight: bold
+              &:nth-child(3)
+                background: #87e038
+              &:nth-child(4)
+                background: #71b931
+              &:last-child
+                border-right: 1px solid #c9d7c9
+              .service-title
+                display: block
+                padding-left: 15px
+
+            &:nth-last-child(2)
+              td:first-child
+                border-radius: 0 0 0 8px
+                border-bottom: 1px solid #c9d7c9
+              td:nth-child(2)
+                border-bottom: 1px solid #c9d7c9
+
+            &:last-child
+              td
+                border-bottom: 1px solid #c9d7c9
+                padding: 0
+                background: #447132
+                &:first-child
+                  background: transparent
+                  border: none
+                &:nth-child(2)
+                  background: transparent
+                  .tbot
+                    background: #87e038
+                    .old-price span:before
+                      border-color: #447132
+                &:nth-child(3)
+                  background: #87e038
+                  .tbot
+                    background: #71b931
+                    .old-price span:before
+                      border-color: #447132
+                &:nth-child(4)
+                  background: #71b931
+                  .tbot
+                    background: #447132
+                &:last-child
+                  border-radius: 0 0 8px 0
+                  .tbot
+                    border-radius: 0 0 8px 8px
+
+                .tbot
+                  background: #447132
+                  padding: 20px 0 30px 0
+                  border-radius: 0 0 0 8px
+                  font-family: FuturaOrtoBold
+                  font-size: 17px
+                  color: #ffffff
+                  text-transform: uppercase
+                  font-weight: bold
+                  word-spacing: -0.1em
+                  span
+                    display: inline-block
+                    margin-left: 0.2em
+                  .old-price
+                    margin-bottom: 5px
+                    span
+                      &:before
+                        border: 2px solid #87e038
+                  .discount-price
+                    font-size: 35px
+                    letter-spacing: -2px
+
 
   //----------------------------------------------------------------------
 

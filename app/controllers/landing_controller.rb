@@ -5,6 +5,8 @@ class LandingController < ApplicationController
     @news = News.all.limit(3)
     @from = ''
     @submit_text = 'Отправить заявку'
+
+    @categories = Category.all
   end
 
 end

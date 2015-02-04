@@ -235,15 +235,62 @@
           = image_tag 'landing/offer_text.png', id: 'offer-text-img'
       .text-block Пакеты аутсорсинга бизнес-процессов:
 
-      = image_tag 'landing/temp_offer.png', id: 'temp-offer-img'
-      a.btn-offer#temp-1 href='#' class='pricelist popup-link'
-        span Хочу узнать больше!
-      a.btn-offer#temp-2 href='#' class='pricelist popup-link'
-        span Хочу узнать больше!
-      a.btn-offer#temp-3 href='#' class='pricelist popup-link'
-        span Хочу узнать больше!
-      a.btn-offer#temp-4 href='#' class='pricelist popup-link'
-        span Хочу узнать больше!
+      - @categories.each do |cat|
+        .offer-block id=cat.title
+          .offer-title
+            .zigzag.inlb
+            .category-title.inlb
+              = image_tag cat.title_image.url(:original)
+            .zigzag.inlb.right-zigzag
+          table cellpadding='0' cellspacing='0'
+            tr
+              th Наши услуги
+              th Цены
+              - cat.packages.each do |package|
+                th
+                  .thead
+                    | Пакет<br>
+                    = package.title
+            - cat.services.each do |service|
+              tr
+                td
+                  span.service-title
+                    = service.title
+                td
+                  = number_with_delimiter service.price, delimiter: ' '
+                  | &nbsp;&#8381;
+                - cat.packages.each do |package|
+                  td
+                    - if package.services.include? service
+                      = image_tag 'landing/yes.png'
+                    - else
+                      = image_tag 'landing/no.png'
+            tr
+              td colspan=2
+                a.btn-offer href='#' class='pricelist popup-link'
+                  span Хочу узнать больше!
+              - cat.packages.each do |package|
+                td
+                  .tbot
+                    .old-price
+                      span.strikethrough
+                        | &nbsp;&nbsp;
+                        = number_with_delimiter package.get_price, delimiter: ' '
+                        | &nbsp;&#8381;&nbsp;&nbsp;
+                    .discount-price
+                      = number_with_delimiter package.discount_price, delimiter: ' '
+                      span &#8381;
+
+
+      /= image_tag 'landing/temp_offer.png', id: 'temp-offer-img'
+      /a.btn-offer#temp-1 href='#' class='pricelist popup-link'
+      /  span Хочу узнать больше!
+      /a.btn-offer#temp-2 href='#' class='pricelist popup-link'
+      /  span Хочу узнать больше!
+      /a.btn-offer#temp-3 href='#' class='pricelist popup-link'
+      /  span Хочу узнать больше!
+      /a.btn-offer#temp-4 href='#' class='pricelist popup-link'
+      /  span Хочу узнать больше!
 
   section#test-drive
     .elka.top
