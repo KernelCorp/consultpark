@@ -7,4 +7,5 @@ class Request
   field :email, type: String
   field :from, type: String
 
+  belongs_to :category
 end

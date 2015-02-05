@@ -10,7 +10,10 @@ class Category
 
   has_many :services
   has_many :packages
+  has_many :requests
 
-  default_scope -> {desc :created_at}
+  default_scope -> {asc :created_at}
+
+  alias :name :title
 
 end
