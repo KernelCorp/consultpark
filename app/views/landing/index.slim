@@ -266,7 +266,7 @@
                         = image_tag 'landing/no.png'
               tr
                 td colspan=2
-                  a.btn-offer href='#' class='pricelist popup-link'
+                  a.btn-offer href='#' class='pricelist popup-link' data-catid=cat.id
                     span Хочу узнать больше!
                 - cat.packages.each do |package|
                   td
@@ -307,7 +307,7 @@
                         = image_tag 'landing/no.png'
               tr
                 td colspan=2
-                  a.btn-offer href='#' class='pricelist popup-link'
+                  a.btn-offer href='#' class='pricelist popup-link' data-catid=cat.id
                     span Хочу узнать больше!
                 - cat.packages.each do |package|
                   td
