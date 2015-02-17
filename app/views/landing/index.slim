@@ -1,617 +1,621 @@
-#landing
+= content_for :head do
+  meta name="keywords" content="landing page, landing page шаблоны, smm, smm менеджер, smm продвижение, аренда персонала, аттестация персонала, аудит, аудит персонала, аудитор, аутсорсинг, бизнес модель, бизнес процесс, бизнес тренинги, виды аудита, внутренний аудит, диагностика бизнеса, договор аутсорсинга, интервьюер, инфографика, коммерческое предложение, коммерческое предложение +на оказание услуг, коммерческое предложение +на услуги, коммерческое предложение образец, коммерческое предложение образец +на услуги, коммуникационная стратегия, консалтинг, консалтинговые услуги, лендинг, лендинг пейдж, лидогенерация, лэндинг, лэндинг пейдж, маркетинг кит, маркетинг кит пример, маркетинг кит шаблоны, маркетинговое продвижение, маркетинговые исследования, маркетинговые исследования рынка, маркетинговые материалы, подбор персонала, пример коммерческого предложения, проведение аудита, разработка стратегии, разработка стратегии организации, разработка стратегии предприятия, разработка стратегии развития, рекламное агентство, система управления продажами, скрипты продаж, стратегия продаж, тайный покупатель, тренинги, управление продажами, франчайзи, франчайзинг, франшиза, консалтинговое агентство, it fencjhcbyu, it аутсорсинг это, it компании, аудит маркетинга, аутсорсинг в логистике, аутсорсинг в россии, аутсорсинг екатеринбург, аутсорсинг интернет магазинов, аутсорсинг маркетинга, аутсорсинг реферат, аутсорсинг это, бизнес процесс маркетинг, каталог услуг ит, маркетинг аутсорсинг, маркетинг в сфере услуг, маркетинг на аутсорсинг, маркетинговые исследования в сфере услуг, маркетинговый аутсорсинг, промышленный аутсорсинг, рекламный аутсорсинг, сео аутсорсинг, создание отдела маркетинга, создание отдела продаж, стратегия продвижения услуг, услуги маркетинг, что такое маркетинговые услуги"
 
-  section#top-nav
-    #top-nav-container.container.w-1025
-      a.anchor.inlb href='#header' О компании
-      .dot-divider.inlb
-      a.anchor.inlb href='#info' Аутсорсинг
-      .dot-divider.inlb
-      a.anchor.inlb href='#offer' Что мы предлагаем
-      .dot-divider.inlb
-      a.anchor.inlb href='#test-drive' Тест-драйв услуг
-      .dot-divider.inlb
-      a.anchor.inlb href='#feedback' Отзывы
-      .dot-divider.inlb
-      a.anchor.inlb href='#clients' Наши клиенты
-      .dot-divider.inlb
-      a.anchor.inlb href='#news' Новости
-      .dot-divider.inlb
-      a.anchor.inlb href='#map' Контакты
+body
+  #landing
+
+    section#top-nav
+      #top-nav-container.container.w-1025
+        a.anchor.inlb href='#header' О компании
+        .dot-divider.inlb
+        a.anchor.inlb href='#info' Аутсорсинг
+        .dot-divider.inlb
+        a.anchor.inlb href='#offer' Что мы предлагаем
+        .dot-divider.inlb
+        a.anchor.inlb href='#test-drive' Тест-драйв услуг
+        .dot-divider.inlb
+        a.anchor.inlb href='#feedback' Отзывы
+        .dot-divider.inlb
+        a.anchor.inlb href='#clients' Наши клиенты
+        .dot-divider.inlb
+        a.anchor.inlb href='#news' Новости
+        .dot-divider.inlb
+        a.anchor.inlb href='#map' Контакты
 
 
-  section#header
-    #header-container.container.w-1025
-      = image_tag 'landing/logo.png', id: 'logo-img'
-      = image_tag 'landing/logo_text.png', id: 'logo-text-img'
+    section#header
+      #header-container.container.w-1025
+        = image_tag 'landing/logo.png', id: 'logo-img'
+        = image_tag 'landing/logo_text.png', id: 'logo-text-img'
 
-      #baloon-1.hbaloon
-        .text
-          | <span>500 000</span> конечных клиентов
-      #baloon-2.hbaloon
-        .text
-          | более<br><span>3000</span> партнеров
-      #baloon-3.hbaloon
-        .text
-          | работа в <span>России</span><br>и<br><span>СНГ</span>
-      #baloon-4.hbaloon
-        .text
-          | <span>5</span><br>собственных<br>успешных<br>проектов
-      #baloon-5.hbaloon
-        .text
-          | <span>80</span><br>довольных<br>компаний<br>клиентов
-      #baloon-6.hbaloon
-        .text
-          | <span>3</span><br>направления<br>аутсорсинга
-      #baloon-7.hbaloon
-        .text
-          | более<br><span>30</span><br>экспертов
-      #baloon-8.hbaloon
-        .text
-          | <span>67</span> проведенных тренингов
-
-  section#info
-    #outsource-container.container.w-1025
-      .title-block
-        .title-img.inlb
-          = image_tag 'landing/i_lightning.png', id: 'lightning-img'
-        .title-text.inlb
-          = image_tag 'landing/outsource_text.png', id: 'outsource-text-img'
-      .text-block-1
-        | Аутсорсинг бизнес-процессов - это динамично развивающийся<br>
-          <span>вид оптимизации деятельности компаний,</span><br>
-          который позволяет:
-      .outsource-list
-        .item.inlb
-          .img
-            = image_tag 'landing/outsource_1.png', id: 'outsource-1-img'
+        #baloon-1.hbaloon
           .text
-            | Привлечь<br>новых клиентов
-        .item.inlb
-          .img
-            = image_tag 'landing/outsource_2.png', id: 'outsource-2-img'
+            | <span>500 000</span> конечных клиентов
+        #baloon-2.hbaloon
           .text
-            | Увеличить<br>средний чек
-        .item.inlb
-          .img
-            = image_tag 'landing/outsource_3.png', id: 'outsource-3-img'
+            | более<br><span>3000</span> партнеров
+        #baloon-3.hbaloon
           .text
-            | Увеличить<br>узнаваемость бренда
-        .item.inlb
-          .img
-            = image_tag 'landing/outsource_4.png', id: 'outsource-4-img'
+            | работа в <span>России</span><br>и<br><span>СНГ</span>
+        #baloon-4.hbaloon
           .text
-            | Повысить<br>частоту покупок
-        .item.inlb
-          .img
-            = image_tag 'landing/outsource_5.png', id: 'outsource-5-img'
+            | <span>5</span><br>собственных<br>успешных<br>проектов
+        #baloon-5.hbaloon
           .text
-            | Повысить<br>конверсию
-      .divider
+            | <span>80</span><br>довольных<br>компаний<br>клиентов
+        #baloon-6.hbaloon
+          .text
+            | <span>3</span><br>направления<br>аутсорсинга
+        #baloon-7.hbaloon
+          .text
+            | более<br><span>30</span><br>экспертов
+        #baloon-8.hbaloon
+          .text
+            | <span>67</span> проведенных тренингов
 
-    #team-container.container.w-1025
-      .title-block
-        .title-img.inlb
-          = image_tag 'landing/i_smile.png', id: 'smile-img'
-        .title-text.inlb
-          = image_tag 'landing/team_text.png', id: 'team-text-img'
-      .text-block-1
-        | Аутсорсинг -<br>
-          <span>это привлечение на постоянной основе команды профессионалов</span><br>
-          для выполнения определенных работ
-      .team-list
-        .item.inlb
-          = image_tag 'landing/team_1.png'
-          .name Наталия Рей
-          .speciality
-            | Консультант в сфере<br>
-              маркетинга и продаж
-        .item.inlb
-          = image_tag 'landing/team_2.png'
-          .name Марина Богомягкова
-          .speciality
-            | Консультант в сфере<br>
-              управления продажами<br>
-              и бизнес-процессами
-        .item.inlb
-          = image_tag 'landing/team_3.png'
-          .name Марина Абросова
-          .speciality
-            | Бизнес-тренер, консультант<br>
-              по направлениям менеджмент<br>
-              и маркетинг
-        .item.inlb
-          = image_tag 'landing/team_4.png'
-          .name Александр Павленок
-          .speciality
-            | Эксперт в сфере<br>
-              дизайна торговой марки
-        .item.inlb
-          = image_tag 'landing/team_5.png'
-          .name Екатерина Красовская
-          .speciality
-            | Консультант в сфере у<br>
-              правления персоналом
-        .item.inlb
-          = image_tag 'landing/team_6.png'
-          .name Андрей Харламов
-          .speciality
-            | Консультант в сфере<br>
-              digital коммуникаций<br>
-              и правового аудита
-        .item.inlb
-          = image_tag 'landing/team_7.png'
-          .name Мария Оськина
-          .speciality
-            | Консультант по построению<br>
-              эффективных коммуникаций<br>
-              и отношений с клиентами.
-        .item.inlb
-          = image_tag 'landing/team_8.png'
-          .name Антон Андреев
-          .speciality
-            | Эксперт в сфере упаковки<br>
-              и продвижения франшизы<br>
-              бизнеса
-        .item.inlb
-          = image_tag 'landing/team_9.png'
-          .name Александр Цветкович
-          .speciality
-            | Эксперт в сфере позиционирования<br>
-              и фирменного стиля
-        .item.inlb
-          = image_tag 'landing/team_10.png'
-          .name Татьяна Диасамидзе
-          .speciality
-            | Бизнес-тренер и консультант<br>
-              в сфере менеджмента<br>
-              и продаж
-        .item.inlb
-          = image_tag 'landing/team_11.png'
-          .name Валерий Габов
-          .speciality
-            | Бизнес-тренер<br>
-              и консультант в сфере<br>
-              эффективных продаж
-        .item.inlb
-          = image_tag 'landing/team_12.png'
-          .name Ирина Архипова
-          .speciality
-            | Коуч в сфере<br>
-              управления персоналом
+    section#info
+      #outsource-container.container.w-1025
+        .title-block
+          .title-img.inlb
+            = image_tag 'landing/i_lightning.png', id: 'lightning-img'
+          .title-text.inlb
+            = image_tag 'landing/outsource_text.png', id: 'outsource-text-img'
+        .text-block-1
+          | Аутсорсинг бизнес-процессов - это динамично развивающийся<br>
+            <span>вид оптимизации деятельности компаний,</span><br>
+            который позволяет:
+        .outsource-list
+          .item.inlb
+            .img
+              = image_tag 'landing/outsource_1.png', id: 'outsource-1-img'
+            .text
+              | Привлечь<br>новых клиентов
+          .item.inlb
+            .img
+              = image_tag 'landing/outsource_2.png', id: 'outsource-2-img'
+            .text
+              | Увеличить<br>средний чек
+          .item.inlb
+            .img
+              = image_tag 'landing/outsource_3.png', id: 'outsource-3-img'
+            .text
+              | Увеличить<br>узнаваемость бренда
+          .item.inlb
+            .img
+              = image_tag 'landing/outsource_4.png', id: 'outsource-4-img'
+            .text
+              | Повысить<br>частоту покупок
+          .item.inlb
+            .img
+              = image_tag 'landing/outsource_5.png', id: 'outsource-5-img'
+            .text
+              | Повысить<br>конверсию
+        .divider
 
-  section#five-steps
-    .elka.top
-    .elka.bot
-    #five-steps-container.container.w-1025
-      .title-block
-        .title-img.inlb
-          = image_tag 'landing/i_check.png', id: 'check-img'
-        .title-text.inlb
-          = image_tag 'landing/five_steps_text.png', id: 'five-steps-text-img'
-      .steps-list
-        .item.inlb.baloon
-          span.arrow
-          = image_tag 'landing/step_1.png', id: 'step-1-img'
-        .next.inlb
-          = image_tag 'landing/next_arrow.png'
-        .item.inlb.baloon
-          span.arrow
-          = image_tag 'landing/step_2.png', id: 'step-2-img'
-        .next.inlb
-          = image_tag 'landing/next_arrow.png'
-        .item.inlb.baloon
-          span.arrow
-          = image_tag 'landing/step_3.png', id: 'step-3-img'
-        .next.inlb
-          = image_tag 'landing/next_arrow.png'
-        .item.inlb.baloon
-          span.arrow
-          = image_tag 'landing/step_4.png', id: 'step-4-img'
-        .next.inlb
-          = image_tag 'landing/next_arrow.png'
-        .item.inlb.baloon
-          span.arrow
-          = image_tag 'landing/step_5.png', id: 'step-5-img'
-      .steps-text
-        .item.inlb
-          | аудит<br>бизнес-<br>процессов
-        .item.inlb
-          | подбор<br>инструментов
-        .item.inlb
-          | составление<br>индивидуального<br>плана
-        .item.inlb
-          | внедрение<br>и реализация
-        .item.inlb
-          | оценка<br>эффективности
+      #team-container.container.w-1025
+        .title-block
+          .title-img.inlb
+            = image_tag 'landing/i_smile.png', id: 'smile-img'
+          .title-text.inlb
+            = image_tag 'landing/team_text.png', id: 'team-text-img'
+        .text-block-1
+          | Аутсорсинг -<br>
+            <span>это привлечение на постоянной основе команды профессионалов</span><br>
+            для выполнения определенных работ
+        .team-list
+          .item.inlb
+            = image_tag 'landing/team_1.png'
+            .name Наталия Рей
+            .speciality
+              | Консультант в сфере<br>
+                маркетинга и продаж
+          .item.inlb
+            = image_tag 'landing/team_2.png'
+            .name Марина Богомягкова
+            .speciality
+              | Консультант в сфере<br>
+                управления продажами<br>
+                и бизнес-процессами
+          .item.inlb
+            = image_tag 'landing/team_3.png'
+            .name Марина Абросова
+            .speciality
+              | Бизнес-тренер, консультант<br>
+                по направлениям менеджмент<br>
+                и маркетинг
+          .item.inlb
+            = image_tag 'landing/team_4.png'
+            .name Александр Павленок
+            .speciality
+              | Эксперт в сфере<br>
+                дизайна торговой марки
+          .item.inlb
+            = image_tag 'landing/team_5.png'
+            .name Екатерина Красовская
+            .speciality
+              | Консультант в сфере у<br>
+                правления персоналом
+          .item.inlb
+            = image_tag 'landing/team_6.png'
+            .name Андрей Харламов
+            .speciality
+              | Консультант в сфере<br>
+                digital коммуникаций<br>
+                и правового аудита
+          .item.inlb
+            = image_tag 'landing/team_7.png'
+            .name Мария Оськина
+            .speciality
+              | Консультант по построению<br>
+                эффективных коммуникаций<br>
+                и отношений с клиентами.
+          .item.inlb
+            = image_tag 'landing/team_8.png'
+            .name Антон Андреев
+            .speciality
+              | Эксперт в сфере упаковки<br>
+                и продвижения франшизы<br>
+                бизнеса
+          .item.inlb
+            = image_tag 'landing/team_9.png'
+            .name Александр Цветкович
+            .speciality
+              | Эксперт в сфере позиционирования<br>
+                и фирменного стиля
+          .item.inlb
+            = image_tag 'landing/team_10.png'
+            .name Татьяна Диасамидзе
+            .speciality
+              | Бизнес-тренер и консультант<br>
+                в сфере менеджмента<br>
+                и продаж
+          .item.inlb
+            = image_tag 'landing/team_11.png'
+            .name Валерий Габов
+            .speciality
+              | Бизнес-тренер<br>
+                и консультант в сфере<br>
+                эффективных продаж
+          .item.inlb
+            = image_tag 'landing/team_12.png'
+            .name Ирина Архипова
+            .speciality
+              | Коуч в сфере<br>
+                управления персоналом
 
-  section#offer
-    #offer-bg-pic
-    #offer-container.container.w-1025
-      .title-block
-        .title-img.inlb.baloon
-          span.arrow
-          = image_tag 'landing/i_star.png', id: 'star-img'
-        .title-text.inlb
-          = image_tag 'landing/offer_text.png', id: 'offer-text-img'
-      .text-block Пакеты аутсорсинга бизнес-процессов:
+    section#five-steps
+      .elka.top
+      .elka.bot
+      #five-steps-container.container.w-1025
+        .title-block
+          .title-img.inlb
+            = image_tag 'landing/i_check.png', id: 'check-img'
+          .title-text.inlb
+            = image_tag 'landing/five_steps_text.png', id: 'five-steps-text-img'
+        .steps-list
+          .item.inlb.baloon
+            span.arrow
+            = image_tag 'landing/step_1.png', id: 'step-1-img'
+          .next.inlb
+            = image_tag 'landing/next_arrow.png'
+          .item.inlb.baloon
+            span.arrow
+            = image_tag 'landing/step_2.png', id: 'step-2-img'
+          .next.inlb
+            = image_tag 'landing/next_arrow.png'
+          .item.inlb.baloon
+            span.arrow
+            = image_tag 'landing/step_3.png', id: 'step-3-img'
+          .next.inlb
+            = image_tag 'landing/next_arrow.png'
+          .item.inlb.baloon
+            span.arrow
+            = image_tag 'landing/step_4.png', id: 'step-4-img'
+          .next.inlb
+            = image_tag 'landing/next_arrow.png'
+          .item.inlb.baloon
+            span.arrow
+            = image_tag 'landing/step_5.png', id: 'step-5-img'
+        .steps-text
+          .item.inlb
+            | аудит<br>бизнес-<br>процессов
+          .item.inlb
+            | подбор<br>инструментов
+          .item.inlb
+            | составление<br>индивидуального<br>плана
+          .item.inlb
+            | внедрение<br>и реализация
+          .item.inlb
+            | оценка<br>эффективности
 
-      - @categories.each do |cat|
-        - if cat.title == 'franchize'
-          .offer-block id=cat.title
-            .offer-title
-              .zigzag.inlb
-              .category-title.inlb
-                = image_tag cat.title_image.url(:original)
-              .zigzag.inlb.right-zigzag
-            table.noprice cellpadding='0' cellspacing='0'
-              tr
-                th Наши услуги
-                th
-                - cat.packages.each do |package|
-                  th
-                    .thead
-                      | Пакет<br>
-                      = package.title
-              - cat.services.each do |service|
+    section#offer
+      #offer-bg-pic
+      #offer-container.container.w-1025
+        .title-block
+          .title-img.inlb.baloon
+            span.arrow
+            = image_tag 'landing/i_star.png', id: 'star-img'
+          .title-text.inlb
+            = image_tag 'landing/offer_text.png', id: 'offer-text-img'
+        .text-block Пакеты аутсорсинга бизнес-процессов:
+
+        - @categories.each do |cat|
+          - if cat.title == 'franchize'
+            .offer-block id=cat.title
+              .offer-title
+                .zigzag.inlb
+                .category-title.inlb
+                  = image_tag cat.title_image.url(:original)
+                .zigzag.inlb.right-zigzag
+              table.noprice cellpadding='0' cellspacing='0'
                 tr
-                  td
-                    span.service-title
-                      = service.title
-                  td
+                  th Наши услуги
+                  th
+                  - cat.packages.each do |package|
+                    th
+                      .thead
+                        | Пакет<br>
+                        = package.title
+                - cat.services.each do |service|
+                  tr
+                    td
+                      span.service-title
+                        = service.title
+                    td
+                    - cat.packages.each do |package|
+                      td
+                        - if package.services.include? service
+                          = image_tag 'landing/yes.png'
+                        - else
+                          = image_tag 'landing/no.png'
+                tr
+                  td colspan=2
+                    a.btn-offer href='#' class='pricelist popup-link' data-catid=cat.id
+                      span Хочу узнать больше!
                   - cat.packages.each do |package|
                     td
-                      - if package.services.include? service
-                        = image_tag 'landing/yes.png'
-                      - else
-                        = image_tag 'landing/no.png'
-              tr
-                td colspan=2
-                  a.btn-offer href='#' class='pricelist popup-link' data-catid=cat.id
-                    span Хочу узнать больше!
-                - cat.packages.each do |package|
-                  td
-                    .tbot
-                      .discount-price
-                        = number_with_delimiter package.discount_price, delimiter: ' '
-                        span &#8381;
+                      .tbot
+                        .discount-price
+                          = number_with_delimiter package.discount_price, delimiter: ' '
+                          span &#8381;
 
-        - else
-          .offer-block id=cat.title
-            .offer-title
-              .zigzag.inlb
-              .category-title.inlb
-                = image_tag cat.title_image.url(:original)
-              .zigzag.inlb.right-zigzag
-            table cellpadding='0' cellspacing='0'
-              tr
-                th Наши услуги
-                th Цены
-                - cat.packages.each do |package|
-                  th
-                    .thead
-                      | Пакет<br>
-                      = package.title
-              - cat.services.each do |service|
+          - else
+            .offer-block id=cat.title
+              .offer-title
+                .zigzag.inlb
+                .category-title.inlb
+                  = image_tag cat.title_image.url(:original)
+                .zigzag.inlb.right-zigzag
+              table cellpadding='0' cellspacing='0'
                 tr
-                  td
-                    span.service-title
-                      = service.title
-                  td
-                    = number_with_delimiter service.price, delimiter: ' '
-                    | &nbsp;&#8381;
+                  th Наши услуги
+                  th Цены
+                  - cat.packages.each do |package|
+                    th
+                      .thead
+                        | Пакет<br>
+                        = package.title
+                - cat.services.each do |service|
+                  tr
+                    td
+                      span.service-title
+                        = service.title
+                    td
+                      = number_with_delimiter service.price, delimiter: ' '
+                      | &nbsp;&#8381;
+                    - cat.packages.each do |package|
+                      td
+                        - if package.services.include? service
+                          = image_tag 'landing/yes.png'
+                        - else
+                          = image_tag 'landing/no.png'
+                tr
+                  td colspan=2
+                    a.btn-offer href='#' class='pricelist popup-link' data-catid=cat.id
+                      span Хочу узнать больше!
                   - cat.packages.each do |package|
                     td
-                      - if package.services.include? service
-                        = image_tag 'landing/yes.png'
-                      - else
-                        = image_tag 'landing/no.png'
-              tr
-                td colspan=2
-                  a.btn-offer href='#' class='pricelist popup-link' data-catid=cat.id
-                    span Хочу узнать больше!
-                - cat.packages.each do |package|
-                  td
-                    .tbot
-                      .old-price
-                        span.strikethrough
-                          | &nbsp;&nbsp;
-                          = number_with_delimiter package.get_price, delimiter: ' '
-                          | &nbsp;&#8381;&nbsp;&nbsp;
-                      .discount-price
-                        = number_with_delimiter package.discount_price, delimiter: ' '
-                        span &#8381;
+                      .tbot
+                        .old-price
+                          span.strikethrough
+                            | &nbsp;&nbsp;
+                            = number_with_delimiter package.get_price, delimiter: ' '
+                            | &nbsp;&#8381;&nbsp;&nbsp;
+                        .discount-price
+                          = number_with_delimiter package.discount_price, delimiter: ' '
+                          span &#8381;
 
 
-      /= image_tag 'landing/temp_offer.png', id: 'temp-offer-img'
-      /a.btn-offer#temp-1 href='#' class='pricelist popup-link'
-      /  span Хочу узнать больше!
-      /a.btn-offer#temp-2 href='#' class='pricelist popup-link'
-      /  span Хочу узнать больше!
-      /a.btn-offer#temp-3 href='#' class='pricelist popup-link'
-      /  span Хочу узнать больше!
-      /a.btn-offer#temp-4 href='#' class='pricelist popup-link'
-      /  span Хочу узнать больше!
+        /= image_tag 'landing/temp_offer.png', id: 'temp-offer-img'
+        /a.btn-offer#temp-1 href='#' class='pricelist popup-link'
+        /  span Хочу узнать больше!
+        /a.btn-offer#temp-2 href='#' class='pricelist popup-link'
+        /  span Хочу узнать больше!
+        /a.btn-offer#temp-3 href='#' class='pricelist popup-link'
+        /  span Хочу узнать больше!
+        /a.btn-offer#temp-4 href='#' class='pricelist popup-link'
+        /  span Хочу узнать больше!
 
-  section#test-drive
-    .elka.top
-    #test-drive-container.container.w-1025
-      .title-block
-        .title-img.inlb.baloon
-          span.arrow
-          = image_tag 'landing/i_drive.png', id: 'drive-img'
-        .title-text.inlb
-          = image_tag 'landing/free_drive_text.png', id: 'free-drive-text-img'
-      .free-list
-        #free-secret.item.inlb
-          .baloon
+    section#test-drive
+      .elka.top
+      #test-drive-container.container.w-1025
+        .title-block
+          .title-img.inlb.baloon
             span.arrow
-            = image_tag 'landing/drive_1.png', id: 'drive-1-img'
-            br
-            = image_tag 'landing/drive_1_text.png', id: 'drive-1-text-img'
-            .text
-              | Проверим насколько<br>эффективно<br>ваши менеджеры<br>используют техники<br>продаж
-          a.btn-2.popup-link href='#' id='secret'
-            span Подать заявку<br>на проверку
-        #free-consult.item.inlb
-          .baloon
+            = image_tag 'landing/i_drive.png', id: 'drive-img'
+          .title-text.inlb
+            = image_tag 'landing/free_drive_text.png', id: 'free-drive-text-img'
+        .free-list
+          #free-secret.item.inlb
+            .baloon
+              span.arrow
+              = image_tag 'landing/drive_1.png', id: 'drive-1-img'
+              br
+              = image_tag 'landing/drive_1_text.png', id: 'drive-1-text-img'
+              .text
+                | Проверим насколько<br>эффективно<br>ваши менеджеры<br>используют техники<br>продаж
+            a.btn-2.popup-link href='#' id='secret'
+              span Подать заявку<br>на проверку
+          #free-consult.item.inlb
+            .baloon
+              span.arrow
+              = image_tag 'landing/drive_2.png', id: 'drive-2-img'
+              br
+              = image_tag 'landing/drive_2_text.png', id: 'drive-2-text-img'
+              .text
+                | Дадим ряд рекомендаций<br>для увеличения прибыли<br>вашей компании
+            a.btn-2.popup-link href='#' id='consult'
+              span Записаться на<br>консультацию
+          #free-audit.item.inlb
+            .baloon
+              span.arrow
+              = image_tag 'landing/drive_3.png', id: 'drive-3-img'
+              br
+              = image_tag 'landing/drive_3_text.png', id: 'drive-3-text-img'
+              .text
+                | Выявим зоны роста<br>для вашего бизнеса<br>на ближайший<br>период
+            a.btn-2.popup-link href='#' id='audit'
+              span Пройти аудит
+
+    section#feedback
+      .elka.top
+      .elka.bot
+      #feedback-container.container.w-1025
+        .title-block
+          .title-img.inlb.baloon
             span.arrow
-            = image_tag 'landing/drive_2.png', id: 'drive-2-img'
-            br
-            = image_tag 'landing/drive_2_text.png', id: 'drive-2-text-img'
-            .text
-              | Дадим ряд рекомендаций<br>для увеличения прибыли<br>вашей компании
-          a.btn-2.popup-link href='#' id='consult'
-            span Записаться на<br>консультацию
-        #free-audit.item.inlb
-          .baloon
+            = image_tag 'landing/i_baloon.png', id: 'i-baloon-img'
+          .title-text.inlb
+            = image_tag 'landing/feedback_text.png', id: 'feedback-text-img'
+        .slider-block
+          ul.bxslider
+            li.item#feedback-1
+              .photo.inlb
+                = image_tag 'landing/feedback_1.png'
+              .content.inlb
+                .name Ирина КАРПУНИНА
+                .desc Владелица крупной сети мебельных магазинов
+                .text
+                  | «ConsultPark» помогли нам грамотно выстроить систему продаж через обучение сотрудников.
+                    Да, это процесс не быстрый, зато результат превзошел все мои ожидания.
+                    Прибыль магазинов значительно выросла.
+            li.item#feedback-2
+              .photo.inlb
+                = image_tag 'landing/feedback_2.png'
+              .content.inlb
+                .name Елена ЗАХАРЕНКО
+                .desc Директор сети центров раннего развития «Бэби-клуб», г. Москва
+                .text
+                  | Мы заключили с «ConsultPark» договор долгосрочного сотрудничества. Компания оказывает нам комплексные
+                    услуги в сфере маркетинга, продаж, обучения персонала. Благодаря экспертам «ConsultPark» наш бизнес
+                    стремительно развивается. Сейчас мы работаем не только в Новосибирске, но и в Москве. Вести дела
+                    одновременно в двух городах очень тяжело, поэтому компания стала для меня правой рукой, ее сотрудникам
+                    я могу доверить курировать бизнес в Новосибирске, так как большее количество времени сейчас провожу
+                    в Москве. Более того, технологии, которые я использую, я передаю людям, которые работают в сфере
+                    оказания услуг для детей. Они оказались очень эффективными.
+            li.item#feedback-3
+              .photo.inlb
+                = image_tag 'landing/feedback_3.png'
+              .content.inlb
+                .name Евгений ЗЕЙНАЛОВ
+                .desc Руководитель музея занимательных наук «Фабрика гениев»
+                .text
+                  | Мы относимся к категории стартапов. Решили обратиться к профессионалам, к компании «ConsultPark»,
+                    чтобы они могли вести процессы, в которых мы не являемся специалистами. Сами же будем заниматься тем,
+                    что нам нравится и в чем мы хорошо разбираемся:  будем разрабатывать новые интересные экспонаты для
+                    нашего музея. В планах у нас – продажа франшизы, и мы уже знаем, к кому обратимся за помощью в этом вопросе.
+            li.item#feedback-4
+              .photo.inlb
+                = image_tag 'landing/feedback_4.png'
+              .content.inlb
+                .name Кристина КУЧИНСКАЯ
+                .desc Руководитель программы "Ты – предприниматель" в Новосибирской области
+                .text
+                  | Я давно знакома с руководителями компании «ConsultPark». Мы часто приглашаем экспертов этой компании
+                    провести мастер-классы, тренинги. Они всегда готовы поделиться опытом, дают дельные советы.
+                    Если молодые предприниматели обращаются ко мне за помощью, то я советую им обратиться в «ConsultPark»,
+                    так как знаю, что там действительно работают профессионалы.
+            li.item#feedback-5
+              .photo.inlb
+                = image_tag 'landing/feedback_5.png'
+              .content.inlb
+                .name Елена МЕРЕЩЕНКО
+                .desc Директор по маркетингу «ЕвроМед клиника»
+                .text
+                  | У нас очень большой объем работы, поэтому все, что касается продвижения в интернете, мы отдали на
+                    аутсорсинг компании «ConsultPark».  Мы экономим время и спокойны за результат, поэтому в дальнейшем
+                    готовы опять сотрудничать с ними.
+            li.item#feedback-6
+              .photo.inlb
+                = image_tag 'landing/feedback_6.png'
+              .content.inlb
+                .name Алексей ЧУПИН
+                .desc Стартап в сфере IT
+                .text
+                  | Команда нашего стартапа – это в основном программисты, узкие специалисты в своей области. Продвижение
+                    наших услуг мы доверили специалистам компании «ConsultPark». Еще один немаловажный факт – «ConsultPark»
+                    находится в Технопарке, где расположен и наш офис. Это очень удобно.
+
+    section#clients
+      #clients-container.container.w-1280
+        .title-block
+          .title-img.inlb.baloon
             span.arrow
-            = image_tag 'landing/drive_3.png', id: 'drive-3-img'
-            br
-            = image_tag 'landing/drive_3_text.png', id: 'drive-3-text-img'
-            .text
-              | Выявим зоны роста<br>для вашего бизнеса<br>на ближайший<br>период
-          a.btn-2.popup-link href='#' id='audit'
-            span Пройти аудит
+            = image_tag 'landing/i_client.png', id: 'i-client-img'
+          .title-text.inlb
+            = image_tag 'landing/clients_text.png', id: 'clients-text-img'
+        .clients-list
+          = image_tag 'landing/logos.png'
 
-  section#feedback
-    .elka.top
-    .elka.bot
-    #feedback-container.container.w-1025
-      .title-block
-        .title-img.inlb.baloon
+    section#news
+      .elka.top
+      .elka.bot
+      #news-container.container
+        .title-block
+          .title-img.inlb.baloon
+            span.arrow
+            = image_tag 'landing/i_news.png', id: 'i-news-img'
+          .title-text.inlb
+            = image_tag 'landing/news_text.png', id: 'news-text-img'
+        .news-list
+          - @news.each_with_index do |news, i|
+            .news-block
+              - if (i != 1)
+                .news-pic.inlb.left-pic
+                  = image_tag news.pic.url(:medium)
+              .news-content.inlb
+                .date
+                  = news.created_at.strftime('%d.%m.%y')
+                a.title href=news_path(news)
+                  = news.title
+                .preview
+                  = news.preview
+              - if (i == 1)
+                .news-pic.inlb.right-pic
+                  = image_tag news.pic.url(:medium)
+            - if (i < 2)
+              .zigzag
+          a.btn-news href='/news'
+            span Все новости
+
+    section#map
+      #baloons-container.container.w-1280
+        .contacts.baloon
           span.arrow
-          = image_tag 'landing/i_baloon.png', id: 'i-baloon-img'
-        .title-text.inlb
-          = image_tag 'landing/feedback_text.png', id: 'feedback-text-img'
-      .slider-block
-        ul.bxslider
-          li.item#feedback-1
-            .photo.inlb
-              = image_tag 'landing/feedback_1.png'
-            .content.inlb
-              .name Ирина КАРПУНИНА
-              .desc Владелица крупной сети мебельных магазинов
-              .text
-                | «ConsultPark» помогли нам грамотно выстроить систему продаж через обучение сотрудников.
-                  Да, это процесс не быстрый, зато результат превзошел все мои ожидания.
-                  Прибыль магазинов значительно выросла.
-          li.item#feedback-2
-            .photo.inlb
-              = image_tag 'landing/feedback_2.png'
-            .content.inlb
-              .name Елена ЗАХАРЕНКО
-              .desc Директор сети центров раннего развития «Бэби-клуб», г. Москва
-              .text
-                | Мы заключили с «ConsultPark» договор долгосрочного сотрудничества. Компания оказывает нам комплексные
-                  услуги в сфере маркетинга, продаж, обучения персонала. Благодаря экспертам «ConsultPark» наш бизнес
-                  стремительно развивается. Сейчас мы работаем не только в Новосибирске, но и в Москве. Вести дела
-                  одновременно в двух городах очень тяжело, поэтому компания стала для меня правой рукой, ее сотрудникам
-                  я могу доверить курировать бизнес в Новосибирске, так как большее количество времени сейчас провожу
-                  в Москве. Более того, технологии, которые я использую, я передаю людям, которые работают в сфере
-                  оказания услуг для детей. Они оказались очень эффективными.
-          li.item#feedback-3
-            .photo.inlb
-              = image_tag 'landing/feedback_3.png'
-            .content.inlb
-              .name Евгений ЗЕЙНАЛОВ
-              .desc Руководитель музея занимательных наук «Фабрика гениев»
-              .text
-                | Мы относимся к категории стартапов. Решили обратиться к профессионалам, к компании «ConsultPark»,
-                  чтобы они могли вести процессы, в которых мы не являемся специалистами. Сами же будем заниматься тем,
-                  что нам нравится и в чем мы хорошо разбираемся:  будем разрабатывать новые интересные экспонаты для
-                  нашего музея. В планах у нас – продажа франшизы, и мы уже знаем, к кому обратимся за помощью в этом вопросе.
-          li.item#feedback-4
-            .photo.inlb
-              = image_tag 'landing/feedback_4.png'
-            .content.inlb
-              .name Кристина КУЧИНСКАЯ
-              .desc Руководитель программы "Ты – предприниматель" в Новосибирской области
-              .text
-                | Я давно знакома с руководителями компании «ConsultPark». Мы часто приглашаем экспертов этой компании
-                  провести мастер-классы, тренинги. Они всегда готовы поделиться опытом, дают дельные советы.
-                  Если молодые предприниматели обращаются ко мне за помощью, то я советую им обратиться в «ConsultPark»,
-                  так как знаю, что там действительно работают профессионалы.
-          li.item#feedback-5
-            .photo.inlb
-              = image_tag 'landing/feedback_5.png'
-            .content.inlb
-              .name Елена МЕРЕЩЕНКО
-              .desc Директор по маркетингу «ЕвроМед клиника»
-              .text
-                | У нас очень большой объем работы, поэтому все, что касается продвижения в интернете, мы отдали на
-                  аутсорсинг компании «ConsultPark».  Мы экономим время и спокойны за результат, поэтому в дальнейшем
-                  готовы опять сотрудничать с ними.
-          li.item#feedback-6
-            .photo.inlb
-              = image_tag 'landing/feedback_6.png'
-            .content.inlb
-              .name Алексей ЧУПИН
-              .desc Стартап в сфере IT
-              .text
-                | Команда нашего стартапа – это в основном программисты, узкие специалисты в своей области. Продвижение
-                  наших услуг мы доверили специалистам компании «ConsultPark». Еще один немаловажный факт – «ConsultPark»
-                  находится в Технопарке, где расположен и наш офис. Это очень удобно.
-
-  section#clients
-    #clients-container.container.w-1280
-      .title-block
-        .title-img.inlb.baloon
+          .title ООО «Консалт Парк»
+          .address
+            | Николаева, 12<br>
+              630102, г. Новосибирск
+          a.email href='mailto:info@consultpark.ru'
+            | info@consultpark.ru
+          .phone 8(383) 373-43-80
+        .formb.baloon
           span.arrow
-          = image_tag 'landing/i_client.png', id: 'i-client-img'
-        .title-text.inlb
-          = image_tag 'landing/clients_text.png', id: 'clients-text-img'
-      .clients-list
-        = image_tag 'landing/logos.png'
+          .title Заказать<br>обратный звонок
+          = render partial: 'landing/form', locals: {from: 'callback', submit_text: 'Заказать'}
+      #map-container.container
+        = render partial: 'landing/gis.html.slim'
 
-  section#news
-    .elka.top
-    .elka.bot
-    #news-container.container
-      .title-block
-        .title-img.inlb.baloon
-          span.arrow
-          = image_tag 'landing/i_news.png', id: 'i-news-img'
-        .title-text.inlb
-          = image_tag 'landing/news_text.png', id: 'news-text-img'
-      .news-list
-        - @news.each_with_index do |news, i|
-          .news-block
-            - if (i != 1)
-              .news-pic.inlb.left-pic
-                = image_tag news.pic.url(:medium)
-            .news-content.inlb
-              .date
-                = news.created_at.strftime('%d.%m.%y')
-              a.title href=news_path(news)
-                = news.title
-              .preview
-                = news.preview
-            - if (i == 1)
-              .news-pic.inlb.right-pic
-                = image_tag news.pic.url(:medium)
-          - if (i < 2)
-            .zigzag
-        a.btn-news href='/news'
-          span Все новости
+    section#social
+      .container.w-1025
+        .vk
+          script type="text/javascript" src="//vk.com/js/api/openapi.js?116"
+          #vk_groups
+          javascript:
+            ready = function () {
+              VK.Widgets.Group("vk_groups", {
+                mode: 0,
+                width: "300",
+                height: "400",
+                color1: '87e038',
+                color2: '447132',
+                color3: '71b931'
+              }, 66175123);
+            };
+            $(document).ready(ready);
+            $(document).on("page:load", ready);
+        .facebook
+          javascript:
+            ready = function () {
+              (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
+            };
+            $(document).ready(ready);
+            $(document).on("page:load", ready);
+          .fb-like-box data-href="https://www.facebook.com/consultpark" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false" data-height="400"
 
-  section#map
-    #baloons-container.container.w-1280
-      .contacts.baloon
+        .instagramm
+          .title Consultpark в Instagram
+          iframe src="http://instagramm.ru/instagram-widget-na-sait/iframe/?type=0&imageW=3&imageH=4&bg=&thumbnailSize=80&border=1&padding=5&typetext=consultpark&uid=1689936336" style="height:368px;width:294px;border:0 none;"
+
+
+
+    /Popup master
+    #popup-shadow
+    #pricelist-popup.popup
+      .popup-baloon.baloon
         span.arrow
-        .title ООО «Консалт Парк»
-        .address
-          | Николаева, 12<br>
-            630102, г. Новосибирск
-        a.email href='mailto:info@consultpark.ru'
-          | info@consultpark.ru
-        .phone 8(383) 373-43-80
-      .formb.baloon
+        = image_tag 'landing/i_baloon_white.png', class: 'icon-img'
+        br
+        = image_tag 'landing/consult_text.png', class: 'text-img'
+        br
+        .text
+          | Заполните форму,<br>чтобы узнать подробности
+        = render partial: 'landing/form', locals: {from: 'pricelist', submit_text: 'Узнать больше'}
+    #secret-popup.popup
+      .popup-baloon.baloon
         span.arrow
-        .title Заказать<br>обратный звонок
-        = render partial: 'landing/form', locals: {from: 'callback', submit_text: 'Заказать'}
-    #map-container.container
-      = render partial: 'landing/gis.html.slim'
-
-  section#social
-    .container.w-1025
-      .vk
-        script type="text/javascript" src="//vk.com/js/api/openapi.js?116"
-        #vk_groups
-        javascript:
-          ready = function () {
-            VK.Widgets.Group("vk_groups", {
-              mode: 0,
-              width: "300",
-              height: "400",
-              color1: '87e038',
-              color2: '447132',
-              color3: '71b931'
-            }, 66175123);
-          };
-          $(document).ready(ready);
-          $(document).on("page:load", ready);
-      .facebook
-        javascript:
-          ready = function () {
-            (function (d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s);
-              js.id = id;
-              js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-          };
-          $(document).ready(ready);
-          $(document).on("page:load", ready);
-        .fb-like-box data-href="https://www.facebook.com/consultpark" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false" data-height="400"
-
-      .instagramm
-        .title Consultpark в Instagram
-        iframe src="http://instagramm.ru/instagram-widget-na-sait/iframe/?type=0&imageW=3&imageH=4&bg=&thumbnailSize=80&border=1&padding=5&typetext=consultpark&uid=1689936336" style="height:368px;width:294px;border:0 none;"
+        = image_tag 'landing/i_secret.png', class: 'icon-img'
+        br
+        = image_tag 'landing/secret_text.png', class: 'text-img'
+        br
+        .text
+          | Проверим насколько эффективно ваши менеджеры<br>используют техники продаж
+        = render partial: 'landing/form', locals: {from: 'secret', submit_text: 'Отправить заявку'}
+    #consult-popup.popup
+      .popup-baloon.baloon
+        span.arrow
+        = image_tag 'landing/i_baloon_white.png', class: 'icon-img'
+        br
+        = image_tag 'landing/consult_text.png', class: 'text-img'
+        br
+        .text
+          | Дадим ряд рекомендаций для увеличения прибыли<br>вашей компании
+        = render partial: 'landing/form', locals: {from: 'consult', submit_text: 'Отправить заявку'}
+    #audit-popup.popup
+      .popup-baloon.baloon
+        span.arrow
+        = image_tag 'landing/i_audit.png', class: 'icon-img'
+        br
+        = image_tag 'landing/audit_text.png', class: 'text-img'
+        br
+        .text
+          | Выявим зоны роста для вашего бизнеса<br>на ближайший период
+        = render partial: 'landing/form', locals: {from: 'audit', submit_text: 'Отправить заявку'}
+    #success-popup.popup
+      .baloon
+        span.arrow
+        = image_tag 'landing/success_text.png', class: 'text-img'
+        br
+        .text
+          | Ваша заявка получена,<br>наш менеджер свяжется с вами<br>в ближайшее время.<br>Спасибо.
+        a.btn-close href='#'
+          span.btn-close Закрыть
 
 
-
-  /Popup master
-  #popup-shadow
-  #pricelist-popup.popup
-    .popup-baloon.baloon
-      span.arrow
-      = image_tag 'landing/i_baloon_white.png', class: 'icon-img'
-      br
-      = image_tag 'landing/consult_text.png', class: 'text-img'
-      br
-      .text
-        | Заполните форму,<br>чтобы узнать подробности
-      = render partial: 'landing/form', locals: {from: 'pricelist', submit_text: 'Узнать больше'}
-  #secret-popup.popup
-    .popup-baloon.baloon
-      span.arrow
-      = image_tag 'landing/i_secret.png', class: 'icon-img'
-      br
-      = image_tag 'landing/secret_text.png', class: 'text-img'
-      br
-      .text
-        | Проверим насколько эффективно ваши менеджеры<br>используют техники продаж
-      = render partial: 'landing/form', locals: {from: 'secret', submit_text: 'Отправить заявку'}
-  #consult-popup.popup
-    .popup-baloon.baloon
-      span.arrow
-      = image_tag 'landing/i_baloon_white.png', class: 'icon-img'
-      br
-      = image_tag 'landing/consult_text.png', class: 'text-img'
-      br
-      .text
-        | Дадим ряд рекомендаций для увеличения прибыли<br>вашей компании
-      = render partial: 'landing/form', locals: {from: 'consult', submit_text: 'Отправить заявку'}
-  #audit-popup.popup
-    .popup-baloon.baloon
-      span.arrow
-      = image_tag 'landing/i_audit.png', class: 'icon-img'
-      br
-      = image_tag 'landing/audit_text.png', class: 'text-img'
-      br
-      .text
-        | Выявим зоны роста для вашего бизнеса<br>на ближайший период
-      = render partial: 'landing/form', locals: {from: 'audit', submit_text: 'Отправить заявку'}
-  #success-popup.popup
-    .baloon
-      span.arrow
-      = image_tag 'landing/success_text.png', class: 'text-img'
-      br
-      .text
-        | Ваша заявка получена,<br>наш менеджер свяжется с вами<br>в ближайшее время.<br>Спасибо.
-      a.btn-close href='#'
-        span.btn-close Закрыть
-
-
-coffee:
-  $ ->
-    $(".bxslider").bxSlider(
-      pager: false
-      adaptiveHeight: true
-      auto: true
-      pause: 5000
-    )
-    new LandingPopupController()
-    return
+  coffee:
+    $ ->
+      $(".bxslider").bxSlider(
+        pager: false
+        adaptiveHeight: true
+        auto: true
+        pause: 5000
+      )
+      new LandingPopupController()
+      return
